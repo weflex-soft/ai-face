@@ -6349,7 +6349,7 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
-.bg-primary {
+.bg-1 {
   background-color: #007bff !important;
 }
 
@@ -9931,22 +9931,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-}
-
-.background + * {
-  position: relative;
-  z-index: 1;
-}
 
 #more-expand {
   display: none;
@@ -10520,8 +10504,8 @@ color: #999999;
 }
 
 .btn-shiny {
-background-color: #1fd1f9;
-background-image: linear-gradient(315deg, #ff5722 0%, #9c27b0 74%);
+/*background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #ff5722 0%, #9c27b0 74%);*/
 border: 0px;
 	overflow: hidden;
 }
@@ -10540,9 +10524,7 @@ border: 0px;
     background-color: #fff;
     animation: shiny-btn 3s ease-in-out infinite;
 }
-.btn-shiny:hover{
-  opacity: .7;
-}
+
 .btn-shiny:active{
   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
@@ -11006,6 +10988,7 @@ border: 0px;
 
 .swiper-users .swiper-slide {
   width: auto;
+  font-size: 0.875rem;
   padding-bottom: 5px;
 }
 
@@ -11385,7 +11368,7 @@ border: 0px;
 
 /* 16. list */
 .list-group .list-group-item {
-  padding: 10px 15px;
+  padding: 3px 3px;
 }
 
 /* 17. Dark mode */
@@ -11645,10 +11628,20 @@ border: 0px;
     box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
 }
 
+.me-0 {
+	width: 15%;
+    font-size: 1rem;
+}
 .me-1 {
 	width: 15%;
     font-size: 0.8rem;
 }
+.me-2 {
+	width: 18%;
+    font-size: 0.8rem;
+}
+
+
 .text-end {
   text-align: right !important; }
 
@@ -11676,39 +11669,87 @@ border: 0px;
     font-weight: 900;
 }
 
-.user {
+.file-upload {
   position: relative; 
   }
 
-.user [class*='user-status-'] {
-	/*display:none;*/
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
+.file-upload [class*='file-upload-'] {
+z-index:999;
+	}
 
-	right: auto;
-	margin: 0 -60px;}
-
-.user [class*='user-status-'].user-status-lg, .user [class*='user-status-'].avatar-status-xl {
+.file-upload [class*='file-upload-'].user-status-lg, .file-upload [class*='file-upload-'].avatar-status-xl {
   width: 17px;
   height: 17px;
   border-width: 2px; }
 
 
 .flag-icon-kr {
-    background-image: url(../img/kr.png);
+    background-image: url('../img/kr.png');
+}
+
+.image-upload-wrap {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #35465d82;
 }
 
 .file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left : 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.user-face {
     position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    opacity: 0;
-    cursor: pointer;
+    margin: 230px -90px;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.face-content {
+  display: none;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.bg-0 {
+  background-color: #007bff !important;
+}
+.bg-1 {
+  background-color: #28a745 !important;
+}
+.bg-2 {
+  background-color: #ffc107 !important;
+}
+.bg-3 {
+  background-color: #dc3545 !important;
+}
+.bg-4 {
+  background-color: #17a2b8 !important;
+}
+.bg-5 {
+  background-color: #343a40 !important;
 }
