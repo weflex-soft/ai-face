@@ -103,7 +103,7 @@ $(document).ready(function () {
         return false;
     })
 
-	$("#customSwitch").change(function(){
+	$("#gender").change(function(){
 		$(".main").toggleClass("m");
 		if($("#customSwitch").is(":checked")){
 			$(".background").css({"background":"url(img/gender-m.gif)","background-position":"center center", "background-size":"cover"}); 	
