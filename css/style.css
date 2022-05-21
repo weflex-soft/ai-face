@@ -11753,3 +11753,22 @@ z-index:999;
 .bg-5 {
   background-color: #343a40 !important;
 }
+
+.tx-0 {
+  text-color: #007bff !important;
+}
+.tx-1 {
+  text-color: #28a745 !important;
+}
+.tx-2 {
+  text-color: #ffc107 !important;
+}
+.tx-3 {
+  text-color: #dc3545 !important;
+}
+.tx-4 {
+  text-color: #17a2b8 !important;
+}
+.bg-5 {
+  text-color: #343a40 !important;
+}

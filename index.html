@@ -493,7 +493,7 @@ Launch demo modal vertical centered
                 }
 
 				for (let i = 0; i < 6; i++) {
-                    var label = "<div class='swiper-slide text-center swiper-slide-active' style='margin: 0 auto;'><figure class='avatar avatar-60 m-1 rounded-circle'><img src='https://search.pstatic.net/common?type=b&size=216&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201811%2F20181119175540684.jpg' style='width: 100%;'></figure><p class='mt-2 mb-0'>"+prediction2[i].className+" <p class='text-success'>"+Math.round(prediction2[i].probability.toFixed(2) * 100)+"%</p></p></div>"
+                    var label = "<div class='swiper-slide text-center swiper-slide-active' style='margin: 0 auto;'><figure class='avatar avatar-60 m-1 rounded-circle'><img src='https://search.pstatic.net/common?type=b&size=216&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201811%2F20181119175540684.jpg' style='width: 100%;'></figure><p class='mt-2 mb-0'>"+prediction2[i].className+" <p class='tx-"+i+"'>"+Math.round(prediction2[i].probability.toFixed(2) * 100)+"%</p></p></div>"
                     labelContainer2.childNodes[i].innerHTML = label;
                 }
             }
