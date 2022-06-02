@@ -33,13 +33,13 @@ $('.image-upload-wrap').bind('dragleave', function () {
 	$('.image-upload-wrap').removeClass('image-dropping');
 });
 
-const urlMale = "https://teachablemachine.withgoogle.com/models/g2TUfSkAe/";
-const urlFemale = "https://teachablemachine.withgoogle.com/models/xzu0goRRv/";
+const urlMale = "/model/male/face/'
+const urlFemale = "/model/female/face/'
 
-const urlMaleFace = '/male/'
-const urlFemaleFace = '/female/'
+const urlMaleFace = '/model/male/'
+const urlFemaleFace = '/model/female/'
 
-const urlSmailFace = 'https://teachablemachine.withgoogle.com/models/fPNKIm2IP/'
+const urlSmailFace = '/model/smail/'
 
 let model, webcam, labelContainer1, labelContainer2, maxPredictions1, maxPredictions2;
 
