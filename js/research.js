@@ -33,8 +33,8 @@ $('.image-upload-wrap').bind('dragleave', function () {
 	$('.image-upload-wrap').removeClass('image-dropping');
 });
 
-const urlMale = "/model/male/face/'
-const urlFemale = "/model/female/face/'
+const urlMale = '/model/male/face/'
+const urlFemale = '/model/female/face/'
 
 const urlMaleFace = '/model/male/'
 const urlFemaleFace = '/model/female/'
