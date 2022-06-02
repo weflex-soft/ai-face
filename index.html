@@ -21,7 +21,17 @@
     <link href="css/style.css" rel="stylesheet" id="style">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-145482737-6');
+	</script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-627cc5d3ed985679"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -227,7 +237,10 @@
     </div>
 
 <script>//$("#exampleModalCenter").modal();</script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="js/research.js"></script>
 
 </body>
 
