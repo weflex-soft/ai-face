@@ -36,8 +36,8 @@ $('.image-upload-wrap').bind('dragleave', function () {
 const urlMale = "https://teachablemachine.withgoogle.com/models/g2TUfSkAe/";
 const urlFemale = "https://teachablemachine.withgoogle.com/models/xzu0goRRv/";
 
-const urlMaleFace = 'https://teachablemachine.withgoogle.com/models/o9alrpU5P/'
-const urlFemaleFace = 'https://teachablemachine.withgoogle.com/models/oOS0Uy5ni/'
+const urlMaleFace = '/male/'
+const urlFemaleFace = '/female/'
 
 const urlSmailFace = 'https://teachablemachine.withgoogle.com/models/fPNKIm2IP/'
 
