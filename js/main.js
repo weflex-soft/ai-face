@@ -167,6 +167,7 @@ $(window).on('resize', function () {
 
 
 function setCookie(cookieName, value, exdays){
+    alert(cookieName);
     var exdate = new Date();
     exdate.setDate(exdate.getDate() + exdays);
     var cookieValue = escape(value) + ((exdays==null) ? "" : "; expires=" + exdate.toGMTString());
