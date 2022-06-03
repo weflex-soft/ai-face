@@ -189,3 +189,8 @@ function getCookie(cookieName) {
     }
     return unescape(cookieValue);
 }
+
+function reload() {
+    gtag('event', '다른 사진으로 재시도', {'event_category': '다른 사진으로 재시도'});
+    window.location.reload();
+}
