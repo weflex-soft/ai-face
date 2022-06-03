@@ -121,6 +121,7 @@ $(document).ready(function () {
 var gender = getCookie("gender");
 
 if(gender){
+    alert('xx');
     $("#gender").trigger("click");
 }
 
