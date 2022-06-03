@@ -106,11 +106,20 @@ $(document).ready(function () {
 	$("#gender").change(function(){
 		$(".main").toggleClass("m");
 		if($("#gender").is(":checked")){
+            setCookie("gender", true, 7); // 7일 동안 쿠키 보관
 			$(".background").css({"background":"url(img/gender-m.gif)","background-position":"center center", "background-size":"cover"}); 	
 		}else{
+            setCookie("gender", false, 7); // 7일 동안 쿠키 보관
 			$(".background").css({"background":"url(img/gender-w.gif)","background-position":"center center", "background-size":"cover"}); 	
 		}
 	});
+    
+    // 저장된 쿠키값을 가져와서 ID 칸에 넣어준다. 없으면 공백으로 들어감.
+    var gender = getCookie("gender");
+
+    if(gender){
+        $("#gender").attr("checked", true);
+    }
 
 });
 
@@ -154,3 +163,32 @@ $(window).on('scroll', function () {
 $(window).on('resize', function () {
 
 });
+
+
+
+function setCookie(cookieName, value, exdays){
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var cookieValue = escape(value) + ((exdays==null) ? "" : "; expires=" + exdate.toGMTString());
+    document.cookie = cookieName + "=" + cookieValue;
+}
+ 
+function deleteCookie(cookieName){
+    var expireDate = new Date();
+    expireDate.setDate(expireDate.getDate() - 1);
+    document.cookie = cookieName + "= " + "; expires=" + expireDate.toGMTString();
+}
+ 
+function getCookie(cookieName) {
+    cookieName = cookieName + '=';
+    var cookieData = document.cookie;
+    var start = cookieData.indexOf(cookieName);
+    var cookieValue = '';
+    if(start != -1){
+        start += cookieName.length;
+        var end = cookieData.indexOf(';', start);
+        if(end == -1)end = cookieData.length;
+        cookieValue = cookieData.substring(start, end);
+    }
+    return unescape(cookieValue);
+}
