@@ -71,7 +71,14 @@
                 </div>
             </div>
         </header>
+<script>
+var gender = getCookie("gender");
 
+if(gender){
+    alert('xx');
+    $("#gender").trigger("click");
+}
+</script>
         <!-- page content start -->
         <div class="file-upload container-fluid text-center">
             <div class="btn-shiny image-upload-wrap avatar avatar-280 rounded-circle mx-auto shadow">
