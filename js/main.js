@@ -114,6 +114,11 @@ $(document).ready(function () {
 		}
 	});
 
+    var gender = getCookie("gender");
+
+    if(gender){
+        $("#gender").trigger("click");
+    }
 });
 
 
