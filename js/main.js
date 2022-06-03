@@ -113,15 +113,16 @@ $(document).ready(function () {
 			$(".background").css({"background":"url(img/gender-w.gif)","background-position":"center center", "background-size":"cover"}); 	
 		}
 	});
-    
-    // 저장된 쿠키값을 가져와서 ID 칸에 넣어준다. 없으면 공백으로 들어감.
-    var gender = getCookie("gender");
-
-    if(gender){
-        $("#gender").attr("checked", true);
-    }
 
 });
+
+    
+// 저장된 쿠키값을 가져와서 ID 칸에 넣어준다. 없으면 공백으로 들어감.
+var gender = getCookie("gender");
+
+if(gender){
+    $("#gender").trigger("click");
+}
 
 
 $(window).on('load', function () {
