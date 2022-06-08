@@ -1,3 +1,25 @@
+function readURL(input) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			$('.file-upload').hide();
+			$('#loading').show();
+			$('.file-upload-image').attr('src', e.target.result);
+			$('.file-upload-content').show();
+		};
+
+		reader.readAsDataURL(input.files[0]);
+		init().then(function () {
+			console.log('hello');
+			predict();
+			createNumbers();
+			$('#loading').hide();
+			$('.face-content').show();
+		});
+	} else {
+		removeUpload();
+	}
+}
 
 function removeUpload() {
 	$('.file-upload-input').replaceWith($('.file-upload-input').clone());
